@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Jani Collection</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link
+      href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+
+    <style>
+      .service-item-top .overflow-hidden {
+        height: 300px;
+      }
+
+      .service-item-top img {
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Spinner Start -->
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div
+        class="spinner-border text-primary"
+        style="width: 3rem; height: 3rem"
+        role="status"
+      >
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Topbar -->
+    <div class="topbar">
+      <div class="contact-info">
+        <span><i class="fa fa-envelope me-1"></i> jaranm22@gmail.com</span>
+        <span><i class="fa fa-phone me-1"></i> +91 9106220373</span>
+      </div>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+    <!-- Topbar end -->
+
+    <!-- STICKY NAVBAR -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top px-3 py-2"
+    >
+      <div class="container-fluid">
+        <!-- Logo -->
+        <a
+          class="navbar-brand fw-bold d-flex justify-content-center align-items-center"
+          href="index.html"
+        >
+          <span class="text-dark">Jani Collection </span>
+        </a>
+
+        <!-- Right Side Icons (Always visible) -->
+
+        <div class="d-flex align-items-center ms-auto gap-3">
+          <!-- <a href="#" class="text-dark"><i class="fa fa-search"></i></a>
+          <a href="#" class="text-dark"><i class="fa fa-user"></i></a>
+          <a href="#" class="text-dark position-relative">
+            <i class="fa fa-shopping-cart"></i>
+            <span
+              class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark text-white"
+              >0</span
+            >
+          </a> -->
+          <button
+            class="btn border-0 d-lg-block d-md-block d-sm-block"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasMenu"
+          >
+            <i class="fa fa-bars fs-5"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- End navbar -->
+
+    <!-- OFFCANVAS MENU -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Menu</h5>
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="list-unstyled">
+          <!-- <li><a href="#" class="d-block py-2">Collection</a></li> -->
+
+          <!-- Pages Dropdown (Accordion-style) -->
+          <li>
+            <button
+              class="btn w-100 text-start p-0 border-0 bg-transparent toggle-submenu"
+            >
+              <span
+                class="fw-bold d-flex justify-content-between align-items-center py-2"
+              >
+                Pages <i class="fa fa-chevron-down"></i>
+              </span>
+            </button>
+            <ul class="submenu list-unstyled ps-3 d-none">
+              <li><a href="index.html" class="d-block py-1">Home</a></li>
+              <li><a href="#" class="d-block py-1">About</a></li>
+              <li><a href="#" class="d-block py-1">Services</a></li>
+              <li><a href="#" class="d-block py-1">Contact</a></li>
+              <li><a href="#" class="d-block py-1">Products</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5">
+      <div class="owl-carousel header-carousel position-relative">
+        <div class="owl-carousel-item position-relative">
+          <img
+            class="img-fluid"
+            src="img/Uno Bakery.jpeg" style="height: 675px;"
+            alt="T-shirt Banner"
+          />
+          <div
+            class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+            style="background: rgba(0, 0, 0, 0.4)"
+          >
+            <div class="container">
+              <div class="row justify-content-start">
+                <div class="col-10 col-lg-8">
+                  <h5
+                    class="text-white text-uppercase mb-3 animated slideInDown"
+                  >
+                    Kids Collections for Every Occasion
+                  </h5>
+                  <h1 class="display-3 text-white animated slideInDown mb-4">
+                    Explore Styles That Keep Up with Their Energy
+                  </h1>
+                  <p class="fs-5 fw-medium text-white mb-4 pb-2">
+                    Our latest kids collection blends playful charm with all-day
+                    comfort. From soft cotton tees to durable denim and adorable
+                    dresses, each piece is thoughtfully designed to keep up with
+                    your child’s busy lifestyle.
+                  </p>
+                  <a
+                    href="#"
+                    class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft"
+                  >
+                    Shop Now
+                  </a>
+                  <a
+                    href="#"
+                    class="btn btn-secondary py-md-3 px-md-5 animated slideInRight"
+                  >
+                    Get Offer
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="owl-carousel-item position-relative">
+          <img
+            class="img-fluid"
+            src="img/pro_2.jpeg" style="height: 675px;"
+            alt="T-shirt Banner 2"
+            style="height: 673px !important"
+          />
+          <div
+            class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+            style="background: rgba(0, 0, 0, 0.4)"
+          >
+            <div class="container">
+              <div class="row justify-content-start">
+                <div class="col-10 col-lg-8">
+                  <h5
+                    class="text-white text-uppercase mb-3 animated slideInDown"
+                  >
+                    Smart Fashion for Kids
+                  </h5>
+                  <h1 class="display-3 text-white animated slideInDown mb-4">
+                    Let Your Kids Dress with Personality
+                  </h1>
+                  <p class="fs-5 fw-medium text-white mb-4 pb-2">
+                    Discover a vibrant collection where fashion meets function.
+                    Our kidswear is designed to reflect your child’s
+                    personality—whether they love dinosaurs, sparkles,
+                    superheroes, or rainbows.
+                  </p>
+                  <a
+                    href="#"
+                    class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft"
+                  >
+                    Shop Now
+                  </a>
+                  <a
+                    href="#"
+                    class="btn btn-secondary py-md-3 px-md-5 animated slideInRight"
+                  >
+                    Get Offer
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Carousel End -->
+
+    <!-- Service Start -->
+ <div class="container-xxl">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold text-primary">Kids Collections</h2>
+      <p class="text-muted mx-auto" style="max-width: 700px;">
+        Discover our adorable and stylish Kids Collection – designed with comfort, creativity, and durability in mind. Whether your little one is heading to a birthday party, a family outing, or just playing in the backyard, our clothes are made to match their energy and personality.
+      </p>
+    </div>
+  
+    <div class="row g-4">
+      <!-- Product Card Start -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card border-0 shadow-sm h-100">
+          <div class="overflow-hidden rounded-top">
+            <img src="img/pro_2.jpeg"  style="height:300px !important"  class="card-img-top img-fluid" alt="Straches Daily Fit" />
+          </div>
+          <div class="card-body d-flex justify-content-between align-items-center bg-light">
+            <h5 class="mb-0 text-truncate">Straches Daily Fit</h5>
+            <a href="#" class="btn btn-outline-primary btn-sm rounded-pill">
+              <i class="fa fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Product Card End -->
+
+      <!-- Repeat for other products -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card border-0 shadow-sm h-100">
+          <div class="overflow-hidden rounded-top">
+            <img src="img/pro_3.jpeg" class="card-img-top img-fluid" style="height:300px !important" alt="Straches Essential" />
+          </div>
+          <div class="card-body d-flex justify-content-between align-items-center bg-light">
+            <h5 class="mb-0 text-truncate">Straches Essential</h5>
+            <a href="#" class="btn btn-outline-primary btn-sm rounded-pill">
+              <i class="fa fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="card border-0 shadow-sm h-100">
+          <div class="overflow-hidden rounded-top">
+            <img src="img/pro_4.jpeg" style="height:300px !important" class="card-img-top img-fluid" alt="Straches Core Tee" />
+          </div>
+          <div class="card-body d-flex justify-content-between align-items-center bg-light">
+            <h5 class="mb-0 text-truncate">Straches Core Tee</h5>
+            <a href="#" class="btn btn-outline-primary btn-sm rounded-pill">
+              <i class="fa fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="card border-0 shadow-sm h-100">
+          <div class="overflow-hidden rounded-top">
+            <img src="img/pro_5.jpeg" style="height:300px !important" class="card-img-top img-fluid" alt="Straches Playwear" />
+          </div>
+          <div class="card-body d-flex justify-content-between align-items-center bg-light">
+            <h5 class="mb-0 text-truncate">Straches Playwear</h5>
+            <a href="#" class="btn btn-outline-primary btn-sm rounded-pill">
+              <i class="fa fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="card border-0 shadow-sm h-100">
+          <div class="overflow-hidden rounded-top">
+            <img src="img/pro_6.jpeg" style="height:300px !important" class="card-img-top img-fluid" alt="Straches Adventure Set" />
+          </div>
+          <div class="card-body d-flex justify-content-between align-items-center bg-light">
+            <h5 class="mb-0 text-truncate">Straches Adventure Set</h5>
+            <a href="#" class="btn btn-outline-primary btn-sm rounded-pill">
+              <i class="fa fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="card border-0 shadow-sm h-100">
+          <div class="overflow-hidden rounded-top">
+            <img src="img/pro_7.jpeg" style="height:300px !important" class="card-img-top img-fluid" alt="Straches Casual Tee" />
+          </div>
+          <div class="card-body d-flex justify-content-between align-items-center bg-light">
+            <h5 class="mb-0 text-truncate">Straches Casual Tee</h5>
+            <a href="#" class="btn btn-outline-primary btn-sm rounded-pill">
+              <i class="fa fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- Service End -->
+
+    <!-- About Start -->
+   <div class="container-xxl py-5">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+        <h6 class="text-secondary text-uppercase">About Us</h6>
+        <h1 class="mb-4">
+          Jani Collections – Where Style Meets Comfort for Kids
+        </h1>
+        <p class="mb-4">
+          At Jani Collections, we specialize in trendy, comfortable, and
+          high-quality clothing for children. Our mission is to make your little
+          ones look and feel their best with stylish designs that suit every
+          season and every personality. From playful prints to everyday essentials,
+          our collections are crafted with care and love.
+        </p>
+        <p class="fw-medium text-primary">
+          <i class="fa fa-check text-success me-3"></i>Soft, Skin-Friendly Fabrics
+        </p>
+        <p class="fw-medium text-primary">
+          <i class="fa fa-check text-success me-3"></i>Vibrant, Trendy & Age-Appropriate Styles
+        </p>
+        <p class="fw-medium text-primary">
+          <i class="fa fa-check text-success me-3"></i>Loved by Parents Across India
+        </p>
+        <div class="bg-primary d-flex align-items-center p-4 mt-5">
+          <div
+            class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white"
+            style="width: 60px; height: 60px"
+          >
+            <i class="fa fa-phone-alt fa-2x text-primary"></i>
+          </div>
+          <div class="ms-3">
+            <p class="fs-5 fw-medium mb-2 text-white">Customer Support</p>
+            <h3 class="m-0 text-secondary">+91 9106220373</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 pt-4" style="min-height: 500px">
+        <div
+          class="position-relative h-100 wow fadeInUp"
+          data-wow-delay="0.5s"
+        >
+          <img
+            class="position-absolute img-fluid w-100 h-100"
+            src="img/pro_2.jpeg"
+            style="object-fit: cover; padding: 0 0 50px 100px"
+            alt="Jani Kids Fashion Showcase"
+          />
+          <img
+            class="position-absolute start-0 bottom-0 img-fluid bg-white pt-2 pe-2 w-50 h-50"
+            src="img/pro_3.jpeg"
+            style="object-fit: cover"
+            alt="Closeup of Jani Kids Wear"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- About End -->
+
+    <!-- Products Start -->
+    <div class="container-xxl py-5">
+      <div class="container">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+          <h6 class="text-secondary text-uppercase">Our Products</h6>
+          <h2 class="mb-5">
+        Let your little ones stay comfy and stylish all day long in our playful
+          </h2>
+        </div>
+
+        <div class="row g-4 justify-content-center"> 
+
+          <div class="col-md-3 mb-3">
+            <div class="card h-100 shadow-sm">    
+              <img src="img/pro_2.jpeg" style="height: 210px !important;" class="card-img-top"alt="T-Shirt Image" />
+              <div class="card-body text-center">
+                <h5 class="card-title mb-3">Boys Tshirt Blue Duck Set</h5> 
+                <div class="d-flex justify-content-center gap-2">
+                  <a href="#" class="btn btn-primary">Enquiry</a>
+                  <a href="#" class="btn btn-outline-primary px-3">Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 mb-3">
+            <div class="card h-100 shadow-sm">    
+              <img src="img/pro_3.jpeg" style="height: 210px !important;" class="card-img-top"alt="T-Shirt Image" />
+              <div class="card-body text-center">
+                <h5 class="card-title mb-3">Boys Black Colorful Set</h5> 
+                <div class="d-flex justify-content-center gap-2">
+                  <a href="#" class="btn btn-primary">Enquiry</a>
+                  <a href="#" class="btn btn-outline-primary px-3">Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 mb-3">
+            <div class="card h-100 shadow-sm">    
+              <img src="img/pro_4.jpeg" style="height: 210px !important;" class="card-img-top"alt="T-Shirt Image" />
+              <div class="card-body text-center">
+                <h5 class="card-title mb-3">Beige Hanging Set</h5> 
+                <div class="d-flex justify-content-center gap-2">
+                  <a href="#" class="btn btn-primary">Enquiry</a>
+                  <a href="#" class="btn btn-outline-primary px-3">Details</a>
+                </div>
+              </div>
+            </div> 
+        </div> 
+  
+          <div class="col-md-3 mb-3">
+            <div class="card h-100 shadow-sm">    
+              <img src="img/pro_7.jpeg" style="height: 210px !important;" class="card-img-top"alt="T-Shirt Image" />
+              <div class="card-body text-center">
+                <h5 class="card-title mb-3">Girls Cartoon Tee Brown Pants</h5> 
+                <div class="d-flex justify-content-center gap-2">
+                  <a href="#" class="btn btn-primary">Enquiry</a>
+                  <a href="#" class="btn btn-outline-primary px-3">Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      </div>
+    </div>
+    <!--   Products End -->
+
+    <!-- Fact Start -->
+    <div class="container-fluid fact bg-dark my-5 py-5">
+      <div class="container">
+        <div class="row g-4">
+          <div
+            class="col-md-6 col-lg-3 text-center wow fadeIn"
+            data-wow-delay="0.1s"
+          >
+            <i class="fa fa-check fa-2x text-white mb-3"></i>
+            <h2 class="text-white mb-2" data-toggle="counter-up">12</h2>
+            <p class="text-white mb-0">Years Experience</p>
+          </div>
+          <div
+            class="col-md-6 col-lg-3 text-center wow fadeIn"
+            data-wow-delay="0.3s"
+          >
+            <i class="fa fa-users-cog fa-2x text-white mb-3"></i>
+            <h2 class="text-white mb-2" data-toggle="counter-up">1234</h2>
+            <p class="text-white mb-0">Branded Kids Styles</p>
+          </div>
+          <div
+            class="col-md-6 col-lg-3 text-center wow fadeIn"
+            data-wow-delay="0.5s"
+          >
+            <i class="fa fa-users fa-2x text-white mb-3"></i>
+            <h2 class="text-white mb-2" data-toggle="counter-up">235</h2>
+            <p class="text-white mb-0">Satisfied Clients</p>
+          </div>
+          <div
+            class="col-md-6 col-lg-3 text-center wow fadeIn"
+            data-wow-delay="0.7s"
+          >
+            <i class="fa fa-wrench fa-2x text-white mb-3"></i>
+            <h2 class="text-white mb-2" data-toggle="counter-up">134</h2>
+            <p class="text-white mb-0">Compleate Projects</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fact End -->
+
+    <!-- Service Start -->
+  <div class="container-fluid py-5 px-4 px-lg-0">
+  <div class="row g-0">
+    <div class="col-lg-3 d-none d-lg-flex">
+      <div class="d-flex align-items-center justify-content-center bg-primary w-100 h-100">
+        <h1 class="display-3 text-white m-0" style="transform: rotate(-90deg)">
+          Trusted by Every Clients
+        </h1>
+      </div>
+    </div>
+    <div class="col-md-12 col-lg-9">
+      <div class="ms-lg-5 ps-lg-5">
+        <div class="text-center text-lg-start wow fadeInUp" data-wow-delay="0.1s">
+          <h6 class="text-secondary text-uppercase">Our Specialty</h6>
+          <h1 class="mb-5">What Makes Our Kidswear Unique</h1>
+        </div>
+
+        <div class="owl-carousel service-carousel position-relative wow fadeInUp" data-wow-delay="0.1s">
+
+          <!-- Service 1 -->
+          <div class="bg-light p-4">
+            <div class="d-flex align-items-center justify-content-center border border-5 border-white mb-4" style="width: 75px; height: 75px">
+              <i class="fa fa-child fa-2x text-primary"></i>
+            </div>
+            <h4 class="mb-3">Soft & Safe Fabrics</h4>
+            <p>Every outfit is crafted with premium, baby-safe materials that are gentle on delicate skin.</p>
+            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Organic & Hypoallergenic</p>
+            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>No Harsh Chemicals</p>
+            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Perfect for Sensitive Skin</p>
+            <a href="#" class="btn bg-white text-primary w-100 mt-2">
+              Read More<i class="fa fa-arrow-right text-secondary ms-2"></i>
+            </a>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="bg-light p-4">
+            <div class="d-flex align-items-center justify-content-center border border-5 border-white mb-4" style="width: 75px; height: 75px">
+              <i class="fa fa-magic fa-2x text-primary"></i>
+            </div>
+            <h4 class="mb-3">Cute & Creative Designs</h4>
+            <p>From cartoons to animals, our playful patterns make your child stand out with style.</p>
+            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Trendy Prints & Colors</p>
+            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Gender-Neutral Options</p>
+            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Customizable Embroidery</p>
+            <a href="#" class="btn bg-white text-primary w-100 mt-2">
+              Read More<i class="fa fa-arrow-right text-secondary ms-2"></i>
+            </a>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="bg-light p-4">
+            <div class="d-flex align-items-center justify-content-center border border-5 border-white mb-4" style="width: 75px; height: 75px">
+              <i class="fa fa-leaf fa-2x text-primary"></i>
+            </div>
+            <h4 class="mb-3">Eco-Friendly Packaging</h4>
+            <p>We care for your kids and the planet — that's why we use sustainable, recyclable packaging.</p>
+            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Plastic-Free Wrapping</p>
+            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Reusable Gift Bags</p>
+            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Zero-Waste Policy</p>
+            <a href="#" class="btn bg-white text-primary w-100 mt-2">
+              Read More<i class="fa fa-arrow-right text-secondary ms-2"></i>
+            </a>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="bg-light p-4">
+            <div class="d-flex align-items-center justify-content-center border border-5 border-white mb-4" style="width: 75px; height: 75px">
+              <i class="fa fa-shipping-fast fa-2x text-primary"></i>
+            </div>
+            <h4 class="mb-3">Fast Shipping & Easy Returns</h4>
+            <p>Get your kid's outfits delivered quickly with a worry-free return policy.</p>
+            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Dispatch in 24 Hours</p>
+            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>7-Day Easy Return</p>
+            <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Live Tracking Available</p>
+            <a href="#" class="btn bg-white text-primary w-100 mt-2">
+              Read More<i class="fa fa-arrow-right text-secondary ms-2"></i>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- Service End -->
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+      <div class="container">
+        <div class="text-center">
+          <h6 class="text-secondary text-uppercase">Testimonial</h6>
+          <h1 class="mb-5">What Our Customers Say</h1>
+        </div>
+        <div
+          class="owl-carousel testimonial-carousel position-relative wow fadeInUp"
+          data-wow-delay="0.1s"
+        >
+          <!-- Testimonial 1 -->
+          <div class="testimonial-item text-center">
+            <div class="testimonial-text bg-light text-center p-4 mb-4">
+              <p class="mb-0">
+              I absolutely love the quality of the baby rompers! The fabric is so soft and breathable — perfect for my newborn. Definitely coming back for more.
+              </p>
+            </div>
+            <img
+              class="bg-light rounded-circle p-2 mx-auto mb-2"
+              src="img/testimonial-1.jpg"
+              style="width: 80px; height: 80px"
+            />
+            <div class="mb-2">
+              <small class="fa fa-star text-secondary"></small>
+              <small class="fa fa-star text-secondary"></small>
+              <small class="fa fa-star text-secondary"></small>
+              <small class="fa fa-star text-secondary"></small>
+              <small class="fa fa-star text-secondary"></small>
+            </div>
+            <h5 class="mb-1">Sarah M.</h5>
+            <p class="m-0">Verified Buyer</p>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-item text-center">
+            <div class="testimonial-text bg-light text-center p-4 mb-4">
+              <p class="mb-0">
+              My twins adore the matching hoodie sets! They're stylish and super comfortable. I love the attention to detail and the safe materials used.
+              </p>
+            </div>
+            <img
+              class="bg-light rounded-circle p-2 mx-auto mb-2"
+              src="img/testimonial-2.jpg"
+              style="width: 80px; height: 80px"
+            />
+            <div class="mb-2">
+              <small class="fa fa-star text-secondary"></small>
+              <small class="fa fa-star text-secondary"></small>
+              <small class="fa fa-star text-secondary"></small>
+              <small class="fa fa-star text-secondary"></small>
+              <small class="fa fa-star text-secondary"></small>
+            </div>
+            <h5 class="mb-1">Jason K.</h5>
+            <p class="m-0">Sneaker Enthusiast</p>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-item text-center">
+            <div class="testimonial-text bg-light text-center p-4 mb-4">
+              <p class="mb-0">
+               My twins adore the matching hoodie sets! They're stylish and super comfortable. I love the attention to detail and the safe materials used.
+              </p>
+            </div>
+            <img
+              class="bg-light rounded-circle p-2 mx-auto mb-2"
+              src="img/testimonial-3.jpg"
+              style="width: 80px; height: 80px"
+            />
+            <div class="mb-2">
+              <small class="fa fa-star text-secondary"></small>
+              <small class="fa fa-star text-secondary"></small>
+              <small class="fa fa-star text-secondary"></small>
+              <small class="fa fa-star text-secondary"></small>
+              <small class="fa fa-star text-secondary"></small>
+            </div>
+            <h5 class="mb-1">Leah R.</h5>
+            <p class="m-0">Fitness Trainer</p>
+          </div>
+
+          <!-- Testimonial 4 -->
+          <div class="testimonial-item text-center">
+            <div class="testimonial-text bg-light text-center p-4 mb-4">
+              <p class="mb-0">
+                I’ve tried many T-shirts, but the comfort and fit from Eagle
+                Vision’s collection is unmatched. The stitching and finish are
+                very premium.
+              </p>
+            </div>
+            <img
+              class="bg-light rounded-circle p-2 mx-auto mb-2"
+              src="img/testimonial-4.jpg"
+              style="width: 80px; height: 80px"
+            />
+            <div class="mb-2">
+              <small class="fa fa-star text-secondary"></small>
+              <small class="fa fa-star text-secondary"></small>
+              <small class="fa fa-star text-secondary"></small>
+              <small class="fa fa-star text-secondary"></small>
+              <small class="fa fa-star text-secondary"></small>
+            </div>
+            <h5 class="mb-1">Amélie.</h5>
+            <p class="m-0">Runner & Shoe Collector</p>
+          </div>
+
+          <!-- Testimonial 5 -->
+          <div class="testimonial-item text-center">
+            <div class="testimonial-text bg-light text-center p-4 mb-4">
+              <p class="mb-0">
+               My son has very sensitive skin, and these clothes are the only ones that don’t cause irritation. Great quality and comfort — highly recommended!
+              </p>
+            </div>
+            <img
+              class="bg-light rounded-circle p-2 mx-auto mb-2"
+              src="img/testimonials_1.webp"
+              style="width: 80px; height: 80px"
+            />
+            <div class="mb-2">
+              <small class="fa fa-star text-secondary"></small>
+              <small class="fa fa-star text-secondary"></small>
+              <small class="fa fa-star text-secondary"></small>
+              <small class="fa fa-star text-secondary"></small>
+              <small class="fa fa-star text-secondary"></small>
+            </div>
+            <h5 class="mb-1">Emily S.</h5>
+            <p class="m-0">Lifestyle Blogger</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  Testimonial End -->
+
+    <!-- Contact Start -->
+    <div class="container-xxl py-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <h6 class="text-secondary text-uppercase">Get In Touch</h6>
+            <h1 class="mb-4">Contact For Any Query</h1>
+            <p class="mb-4">
+              Have questions about our products, your order, or anything else?
+              We're here to help! Reach out to us anytime and our support team
+              will get back to you as soon as possible.
+            </p>
+            <iframe
+              class="position-relative w-100"
+              src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d29753.679805870248!2d72.8049996623542!3d21.22352060561417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sPLOT%20NO.%2030-31%2C%20PARSHOTTAM%20NAGAR%20SOCIETY%2C%20GOTALAWADI%20ROAD%2C%20KATARGAM%20DARWAJA%2C%20SURAT%2C%20GUJARAT%2C%20395004!5e0!3m2!1sen!2sin!4v1755774225857!5m2!1sen!2sin"
+              frameborder="0"
+              style="height: 300px; border: 0"
+              allowfullscreen=""
+              aria-hidden="false"
+              tabindex="0"
+            ></iframe>
+          </div>
+          <div class="col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="bg-light p-5 h-100 d-flex align-items-center">
+              <form>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="name"
+                        placeholder="Your Name"
+                      />
+                      <label for="name">Your Name</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        placeholder="Your Email"
+                      />
+                      <label for="email">Your Email</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-floating">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="subject"
+                        placeholder="Subject"
+                      />
+                      <label for="subject">Subject</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-floating">
+                      <textarea
+                        class="form-control"
+                        placeholder="Leave a message here"
+                        id="message"
+                        style="height: 150px"
+                      ></textarea>
+                      <label for="message">Message</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button class="btn btn-primary w-100 py-3" type="submit">
+                      Send Message
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Contact End -->
+
+    <!-- Footer Start -->
+    <div
+      class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn"
+      data-wow-delay="0.1s"
+    >
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-lg-3 col-md-6">
+            <h4 class="text-light mb-4">Address</h4>
+            <p class="mb-2">
+              <i class="fa fa-map-marker-alt me-3"></i>PLOT NO. 30-31, PARSHOTTAM NAGAR
+SOCIETY, GOTALAWADI ROAD, KATARGAM
+DARWAJA, SURAT, GUJARAT, 395004 
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-phone-alt me-3"></i>+91 9106220373
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-envelope me-3"></i>jaranm22@gmail.com
+            </p>
+            <div class="d-flex pt-2">
+              <a class="btn btn-outline-light btn-social" href=""
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a class="btn btn-outline-light btn-social" href=""
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a class="btn btn-outline-light btn-social" href=""
+                ><i class="fab fa-youtube"></i
+              ></a>
+              <a class="btn btn-outline-light btn-social" href=""
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h4 class="text-light mb-4">Opening Hours</h4>
+            <h6 class="text-light">Monday - Friday:</h6>
+            <p class="mb-4">09.00 AM - 09.00 PM</p>
+            <h6 class="text-light">Saturday - Sunday:</h6>
+            <p class="mb-0">09.00 AM - 12.00 PM</p>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h4 class="text-light mb-4">Quick Links</h4>
+            <a class="btn btn-link" href="">Home </a>
+            <a class="btn btn-link" href="">About </a>
+            <a class="btn btn-link" href="">Contact </a>
+            <a class="btn btn-link" href="">Services </a>
+            <a class="btn btn-link" href="">Products</a>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h4 class="text-light mb-4">Newsletter</h4>
+            <p>
+              We value integrity, clarity, and dedication in everything we do.
+            </p>
+            <div class="position-relative mx-auto" style="max-width: 400px">
+              <input
+                class="form-control border-0 w-100 py-3 ps-4 pe-5"
+                type="text"
+                placeholder="Your email"
+              />
+              <button
+                type="button"
+                class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
+              >
+                SignUp
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <div class="row">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+              &copy;
+              <a class="border-bottom" href="#">Jani Collection</a>,
+              All Right Reserved.
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+              <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+              Designed By
+              <a class="border-bottom" href="https://trade4export.com"
+                >Trade4Export</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a
+      href="#"
+      class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"
+      ><i class="bi bi-arrow-up"></i
+    ></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <!-- Submenu Toggle Script -->
+    <script>
+      document
+        .querySelector(".toggle-submenu")
+        .addEventListener("click", function () {
+          const submenu = document.querySelector(".submenu");
+          submenu.classList.toggle("d-none");
+        });
+    </script>
+  </body>
+</html>
