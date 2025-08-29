@@ -41,8 +41,38 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
+<link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
 
-    <style>
+  <style>
+    .owl-nav-custom {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
+    .owl-nav-custom .nav-btn {
+      width: 45px;
+      height: 45px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid #0d6efd;
+      background: #fff;
+      color: #0d6efd;
+      border-radius: 50%;
+      font-size: 20px;
+      cursor: pointer;
+      transition: all .3s ease;
+    }
+    .owl-nav-custom .nav-btn:hover {
+      background: #0d6efd;
+      color: #fff;
+      box-shadow: 0 6px 18px rgba(13,110,253,.25);
+      transform: scale(1.05);
+    }
       .card-img-top {
         height: 250px;
         /* Set desired height */
@@ -503,7 +533,7 @@
                   data-product="Tender Coconut"
                   >Enquiry</a
                 >
-                <a href="tendercoconut.html" class="btn btn-outline-primary"
+                <a href="mugs.html" class="btn btn-outline-primary"
                   >Details</a
                 >
               </div>
@@ -532,7 +562,7 @@
                   data-product="Clay Pot"
                   >Enquiry</a
                 >
-                <a href="claypot.html" class="btn btn-outline-primary"
+                <a href="keychain.html" class="btn btn-outline-primary"
                   >Details</a
                 >
               </div>
@@ -561,7 +591,7 @@
                   data-product="God Statue"
                   >Enquiry</a
                 >
-                <a href="godsstatus.html" class="btn btn-outline-primary"
+                <a href="fridgemagnets.html" class="btn btn-outline-primary"
                   >Details</a
                 >
               </div>
@@ -752,7 +782,7 @@
               <div class="card-body">
                 <h5 class="card-title">Tea Coasters</h5>
                 <p>These elegant tea coasters protect surfaces while adding a touch of style to your home decor.</p>
-                <a href="Comfort-Fit-Lowers.html" class="btn btn-primary me-2"
+                <a href="#" class="btn btn-primary me-2"
                   >ENQUIRY</a
                 >
               </div>
@@ -770,7 +800,7 @@
               <div class="card-body">
                 <h5 class="card-title">Fridge Magnets</h5>
                 <p>Brighten up your space with these fun and functional fridge magnets that add personality to any surface.</p>
-                <a href="Classic-Fit-Trousers.html" class="btn btn-primary me-2"
+                <a href="#" class="btn btn-primary me-2"
                   >ENQUIRY</a
                 >
               </div>
@@ -788,7 +818,7 @@
               <div class="card-body">
                 <h5 class="card-title">Keychain</h5>
                 <p>Compact and practical, this keychain keeps your keys organized while showcasing a touch of style.</p>
-                <a href="Casual-Beige-Top.html" class="btn btn-primary me-2"
+                <a href="#" class="btn btn-primary me-2"
                   >ENQUIRY</a
                 >
               </div>
@@ -806,7 +836,7 @@
               <div class="card-body">
                 <h5 class="card-title">Coffee Mugs</h5>
                 <p>Sip in style with these charming coffee mugs, perfect for enjoying your favorite brew.</p>
-                <a href="Boho-Floral-Maxi.html" class="btn btn-primary me-2"
+                <a href="#" class="btn btn-primary me-2"
                   >ENQUIRY</a
                 >
               </div>
@@ -825,7 +855,7 @@
                 <h5 class="card-title">Customize Nameplates</h5>
                 <p>Personalize your space with custom nameplates that add a unique and welcoming touch to any room.</p>
                 <a
-                  href="Blue-Printed-Cotton-Dress.html"
+                  href="#"
                   class="btn btn-primary me-2"
                   >ENQUIRY</a
                 >
@@ -845,7 +875,7 @@
               <div class="card-body">
                 <h5 class="card-title">Metal Photo Frames</h5>
                 <p>Showcase your cherished memories with these sleek and durable metal photo frames, perfect for any décor.</p>
-                <a href="Black-Net-Crop-Top.html" class="btn btn-primary me-2"
+                <a href="#" class="btn btn-primary me-2"
                   >ENQUIRY</a
                 >
               </div>
@@ -1046,83 +1076,100 @@
     <!-- Team End -->
 
     <!-- Testimonial Start -->
-    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
-  <div class="container">
-    <div class="text-center">
-      <h6 class="text-primary text-uppercase">// Testimonial //</h6>
-      <h1 class="mb-5">Our Clients Say!</h1>
-    </div>
+    <div class="container-xxl py-5">
+    <div class="container">
+      <div class="text-center">
+        <h6 class="text-primary text-uppercase">// Testimonial //</h6>
+        <h1 class="mb-5">Our Clients Say!</h1>
+      </div>
 
-    <div class="owl-carousel testimonial-carousel position-relative">
+      <div class="owl-carousel testimonial-carousel owl-theme">
+        <!-- Testimonial 1 -->
+        <div class="testimonial-item text-center">
+          <img class="bg-light rounded-circle p-2 mx-auto mb-3"
+               src="img/testimonial2.jpg" style="width: 80px; height: 80px" />
+          <h5 class="mb-0">Rohit Mehra</h5>
+          <p>Customized Coffee Mug</p>
+          <div class="testimonial-text bg-light text-center p-4">
+            <p class="mb-0">
+              "Loved the vibrant print and quality! My personalized coffee mug from SadGuru Arts & Craft makes my mornings extra special."
+            </p>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial-item text-center">
+          <img class="bg-light rounded-circle p-2 mx-auto mb-3"
+               src="img/testimonial1.jpg" style="width: 80px; height: 80px" />
+          <h5 class="mb-0">Ananya Sharma</h5>
+          <p>Personalized Keychain</p>
+          <div class="testimonial-text bg-light text-center p-4">
+            <p class="mb-0">
+              "Beautifully crafted and sturdy! My personalized keychain from SadGuru Arts & Craft adds a unique touch to my everyday essentials."
+            </p>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial-item text-center">
+          <img class="bg-light rounded-circle p-2 mx-auto mb-3"
+               src="img/testimonial4.jpg" style="width: 80px; height: 80px" />
+          <h5 class="mb-0">Vikram Singh</h5>
+          <p>Custom Coffee Mug</p>
+          <div class="testimonial-text bg-light text-center p-4">
+            <p class="mb-0">
+              "The custom coffee mug I ordered is absolutely stunning. The print quality is vibrant, and it makes my mornings extra special!"
+            </p>
+          </div>
+        </div>
+
+        <!-- Testimonial 4 -->
+        <div class="testimonial-item text-center">
+          <img class="bg-light rounded-circle p-2 mx-auto mb-3"
+               src="img/testimonial3.jpg" style="width: 80px; height: 80px" />
+          <h5 class="mb-0">Priya Gupta</h5>
+          <p>EVA Footwear</p>
+          <div class="testimonial-text bg-light text-center p-4">
+            <p class="mb-0">
+              "Super lightweight and comfortable! These EVA shoes are perfect for all-day wear and look great with any outfit."
+            </p>
+          </div>
+        </div>
+      </div>
+
       
-      <!-- Testimonial 1 -->
-      <div class="testimonial-item text-center">
-        <img
-          class="bg-light rounded-circle p-2 mx-auto mb-3"
-          src="img/testimonial2.jpg"
-          style="width: 80px; height: 80px"
-        />
-        <h5 class="mb-0">Rohit Mehra</h5>
-        <p>Customized Coffee Mug</p>
-        <div class="testimonial-text bg-light text-center p-4">
-          <p class="mb-0">
-            "Loved the vibrant print and quality! My personalized coffee mug from SadGuru Arts & Craft makes my mornings extra special."
-          </p>
-        </div>
-      </div>
-
-      <!-- Testimonial 2 -->
-      <div class="testimonial-item text-center">
-        <img
-          class="bg-light rounded-circle p-2 mx-auto mb-3"
-          src="img/testimonial1.jpg"
-          style="width: 80px; height: 80px"
-        />
-        <h5 class="mb-0">Ananya Sharma</h5>
-        <p>Personalized Keychain</p>
-        <div class="testimonial-text bg-light text-center p-4">
-          <p class="mb-0">
-            "Beautifully crafted and sturdy! My personalized keychain from SadGuru Arts & Craft adds a unique touch to my everyday essentials."
-          </p>
-        </div>
-      </div>
-
-      <!-- Testimonial 3 -->
-      <div class="testimonial-item text-center">
-        <img
-          class="bg-light rounded-circle p-2 mx-auto mb-3"
-          src="img/testimonial4.jpg"
-          style="width: 80px; height: 80px"
-        />
-        <h5 class="mb-0">Vikram Singh</h5>
-        <p>Custom Coffee Mug</p>
-        <div class="testimonial-text bg-light text-center p-4">
-          <p class="mb-0">
-            "The custom coffee mug I ordered is absolutely stunning. The print quality is vibrant, and it makes my mornings extra special!"
-          </p>
-        </div>
-      </div>
-
-      <!-- Testimonial 4 -->
-      <div class="testimonial-item text-center">
-        <img
-          class="bg-light rounded-circle p-2 mx-auto mb-3"
-          src="img/testimonial3.jpg"
-          style="width: 80px; height: 80px"
-        />
-        <h5 class="mb-0">Priya Gupta</h5>
-        <p>EVA Footwear</p>
-        <div class="testimonial-text bg-light text-center p-4">
-          <p class="mb-0">
-            "Super lightweight and comfortable! These EVA shoes are perfect for all-day wear and look great with any outfit."
-          </p>
-        </div>
-      </div>
-
     </div>
   </div>
-</div>
 
+  <!-- jQuery and Owl Carousel -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+
+  <script>
+    $(function () {
+      var $owl = $('.testimonial-carousel');
+
+      $owl.owlCarousel({
+        items: 1,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        smartSpeed: 800,
+        dots: false,
+        nav: false
+      });
+
+      // Custom nav
+      $('.owl-prev-custom').on('click', function () {
+        $owl.trigger('prev.owl.carousel');
+      });
+      $('.owl-next-custom').on('click', function () {
+        $owl.trigger('next.owl.carousel');
+      });
+    });
+  </script>
 
     <!-- Testimonial End -->
 

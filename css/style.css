@@ -301,7 +301,7 @@
   color: #ffffff !important;
 }
 
-.testimonial-carousel .owl-dots {
+/* .testimonial-carousel .owl-dots {
   margin-top: 24px;
   display: flex;
   align-items: flex-end;
@@ -321,7 +321,7 @@
 .testimonial-carousel .owl-dot.active {
   background: var(--primary);
   border-color: var(--primary);
-}
+} */
 
 /*** Footer ***/
 .footer {
