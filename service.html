@@ -37,8 +37,43 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
 
     <style>
+      .owl-nav-custom {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 20px;
+      }
+      .owl-nav-custom .nav-btn {
+        width: 45px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid #0d6efd;
+        background: #fff;
+        color: #0d6efd;
+        border-radius: 50%;
+        font-size: 20px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+      .owl-nav-custom .nav-btn:hover {
+        background: #0d6efd;
+        color: #fff;
+        box-shadow: 0 6px 18px rgba(13, 110, 253, 0.25);
+        transform: scale(1.05);
+      }
+
       .team-item img {
         height: 250px;
         /* set uniform height */
@@ -431,14 +466,14 @@
     <!-- Team End -->
 
     <!-- Testimonial Start -->
-    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container-xxl py-5">
       <div class="container">
         <div class="text-center">
           <h6 class="text-primary text-uppercase">// Testimonial //</h6>
           <h1 class="mb-5">Our Clients Say!</h1>
         </div>
 
-        <div class="owl-carousel testimonial-carousel position-relative">
+        <div class="owl-carousel testimonial-carousel owl-theme">
           <!-- Testimonial 1 -->
           <div class="testimonial-item text-center">
             <img
@@ -511,6 +546,34 @@
         </div>
       </div>
     </div>
+
+    <!-- jQuery and Owl Carousel -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script>
+      $(function () {
+        var $owl = $(".testimonial-carousel");
+
+        $owl.owlCarousel({
+          items: 1,
+          loop: true,
+          autoplay: true,
+          autoplayTimeout: 4000,
+          smartSpeed: 800,
+          dots: false,
+          nav: false,
+        });
+
+        // Custom nav
+        $(".owl-prev-custom").on("click", function () {
+          $owl.trigger("prev.owl.carousel");
+        });
+        $(".owl-next-custom").on("click", function () {
+          $owl.trigger("next.owl.carousel");
+        });
+      });
+    </script>
 
     <!-- Testimonial End -->
 
